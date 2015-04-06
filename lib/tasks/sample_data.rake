@@ -29,7 +29,6 @@ def make_users
 end
 
 def make_microposts
-    #users = User.all(limit: 6)
     users = User.all.limit(6)
     50.times do 
       content = Faker::Lorem.sentence(5)
