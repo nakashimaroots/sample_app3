@@ -224,7 +224,5 @@ describe User do
         expect(Relationship.where(follower_id: @user.id)).to be_empty
       end
     end
-
-
   end
 end
