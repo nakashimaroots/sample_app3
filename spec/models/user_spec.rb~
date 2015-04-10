@@ -6,7 +6,7 @@ describe User do
     @user = User.new(name: "Example User",email: "user@example.com",
                      password: "foobar", password_confirmation: "foobar")
   end
-
+puts "#{@customer.class}"
   subject { @user}
 
   it { should respond_to(:name) }
@@ -165,7 +165,7 @@ describe User do
 
       before do
         @user.follow!(followed_user)
-        3.times { followed_user.microposts.create!(content: "Lorem ipsum")
+        3.times { followed_user.microposts.create!(content: "Lorem ipsum") }
       end
 
       its(:feed) { should include(newer_micropost) }

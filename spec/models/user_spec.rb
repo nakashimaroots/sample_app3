@@ -6,7 +6,7 @@ describe User do
     @user = User.new(name: "Example User",email: "user@example.com",
                      password: "foobar", password_confirmation: "foobar")
   end
-
+puts "#{@user.class}"
   subject { @user}
 
   it { should respond_to(:name) }
