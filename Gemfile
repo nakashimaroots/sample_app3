@@ -42,6 +42,7 @@ gem 'therubyracer', '0.10.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '3.0.4'
+gem 'jquery-turbolinks'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '1.1.1'
